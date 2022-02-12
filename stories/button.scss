@@ -1,0 +1,120 @@
+.ui-btn {
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  border: 0;
+  background: transparent;
+  border-radius: 6px;
+
+  box-sizing: border-box;
+
+  /* Button Colors */
+  &.ui-btn--default {
+    background: #E0E0E0;
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+    color: #3F3F3F;
+
+    &:hover, &:focus {
+      background: #AEAEAE;
+    }
+  }
+  &.ui-btn--primary {
+    background: #2962FF;
+    box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
+    color: #FFFFFF;
+
+    &:hover, &:focus {
+      background: #0039CB;
+    }
+  }
+  &.ui-btn--secondary {
+    background: #455A64;
+    box-shadow: 0px 2px 3px rgba(69, 90, 100, 0.2);
+    color: #FFFFFF;
+
+    &:hover, &:focus {
+      background: #1C313A;
+    }
+  }
+
+  /* Button Size */
+  &.ui-btn--sm {
+    padding: 0 12px;
+    height: 32px;
+  }
+  &.ui-btn--md {
+    padding: 0 16px;
+    height: 36px;
+  }
+  &.ui-btn--lg {
+    padding: 0 22px;
+    height: 42px;
+  }
+
+  /* Button Variant */
+  &.ui-btn--outline {
+    background: #FFFFFF;
+    border: 1px solid #3D5AFE;
+    color: #3D5AFE;
+    box-shadow: none;
+    
+    &:hover, &:focus {
+      background: rgba(41, 98, 255, 0.1);
+    }
+  }
+  &.ui-btn--text {
+    background: #FFFFFF;
+    border: 0;
+    color: #3D5AFE;
+    box-shadow: none;
+    
+    &:hover, &:focus {
+      background: rgba(41, 98, 255, 0.1);
+    }
+  }
+
+  /* Button Disabled */
+  &:disabled {
+    background: #E0E0E0;
+    color: #9E9E9E;
+    border: 0;
+    cursor: no-drop;
+
+    &.ui-btn--text {
+      background: #FFFFFF;
+
+      &:hover, &:focus {
+        background: #FFFFFF;
+      }
+    }
+
+    &:hover, &:focus {
+      background: #E0E0E0;
+    }
+  }
+
+  /* Button Disabled Shadow */
+  &.ui-btn--no-shadow {
+    box-shadow: none;
+  }
+
+  /* Button Icon */
+  & > .ui-btn-icon {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: -4px;
+    vertical-align: middle;
+    color: inherit;
+
+    &.ui-btn-icon--left {
+      margin-right: 4px;
+    }
+    &.ui-btn-icon--right {
+      margin-left: 4px;
+    }
+  }
+}
